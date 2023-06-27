@@ -1,0 +1,28 @@
+<h1>Registrate</h1>
+<h2>Con tu Email:</h2>
+<form action="/api/users/signup" method="post">
+    <div class="mb-3">
+        <label for="firstName" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="firstName" />
+    </div>
+    <div class="mb-3">
+        <label for="lastName" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="lastName" />
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" />
+    </div>
+        <div class="mb-3">
+        <label for="age" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="age" />
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" />
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+<h2>Con Github:</h2>
+<button onclick="location.href='/api/users/githubSignup'" type="button" class="btn btn-primary">Registrarse</button>

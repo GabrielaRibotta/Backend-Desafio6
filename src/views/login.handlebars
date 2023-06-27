@@ -1,0 +1,15 @@
+<h1>Iniciá sesión</h1>
+<form action="/api/users/login" method="post">
+    <div class="mb-3">
+        <label for="userEmail" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="userEmail" />
+    </div>
+    <div class="mb-3">
+        <label for="userPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="userPassword" />
+    </div>
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
+
+<h2>Si todavía no tenés cuenta:</h2>
+<button onclick="location.href='/api/views/signup'" type="button" class="btn btn-primary">Registrate</button>
